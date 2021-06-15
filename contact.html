@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel='stylesheet' media='screen and (min-width: 1440px) and (max-width: 2560px)' href='style/1920x1080.css' />
+    <link rel='stylesheet' media='screen and (min-width: 1367px) and (max-width: 1440px)' href='style/1440x900.css' />
+    <link rel='stylesheet' media='screen and (min-width: 1300px) and (max-width: 1366px)' href='style/1366x768.css' />
+    <link rel='stylesheet' media='screen and (min-width: 1200px) and (max-width: 1300px)' href='style/1280x800.css' />
+    <link rel='stylesheet' media='screen and (min-width: 900px) and (max-width: 1200px)' href='style/1024x768.css' />
+    <link rel='stylesheet' media='screen and (min-width: 500px) and (max-width: 900px)' href='style/768x1024.css' />
+    <link rel='stylesheet' media='screen and (min-width: 300px) and (max-width: 499px)' href='style/414x896.css' />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style media="screen">
+      html {
+        background: #090909;
+        display: block;
+        height: 1250px;
+      }
+      @font-face {
+          font-family: 'Misto';
+          src: url('fonts/Misto.eot');
+          src: url('fonts/Misto.eot') format('embedded-opentype'),
+               url('fonts/Misto.woff2') format('woff2'),
+               url('fonts/Misto.woff') format('woff'),
+               url('fonts/Misto.ttf') format('truetype'),
+               url('fonts/Misto.svg#Misto') format('svg');
+      }
+      @font-face {
+      	font-family: 'Conv_10710';
+      	src: url('fonts/10710.eot');
+      	src: local('☺'), url('fonts/10710.woff') format('woff'), url('fonts/10710.ttf') format('truetype'), url('fonts/10710.svg') format('svg');
+      	font-weight: normal;
+      	font-style: normal;
+      }
+        .forbody {
+          background: #090909;
+          transition: 1s;
+        }
+        .fix {
+          position: fixed;
+          width: 100%;
+          height: 80px;
+          background: #090909;
+          top: 0px;
+          left: 0px;
+          z-index: 10;
+        }
+        .logo {
+          position: absolute;
+          width: 81px;
+          height: 42px;
+          left: 4.5%;
+          top: 32px;
+          transition: .5s;
+        }
+        .logo:hover {
+          opacity: .4;
+          transition: .1s;
+          cursor: pointer;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+        }
+        .About {
+          position: absolute;
+          width: 13%;
+          height: 20px;
+          left: 14.5%;
+          top: 41px;
+        }
+        .list {
+          position: absolute;
+          width: 14.3%;
+          height: 27px;
+          left: 24.3%;
+          top: 41px;
+        }
+        .found {
+          position: absolute;
+          width: 10.5%;
+          height: 27px;
+          left: 38.4%;
+          top: 41px;
+        }
+        .skill {
+          position: absolute;
+          width: 14%;
+          height: 27px;
+          left: 53%;
+          top: 41px;
+        }
+        .choose {
+          position: absolute;
+          width: 12%;
+          height: 27px;
+          left: 70.2%;
+          top: 41px;
+        }
+        .choose2 {
+          position: absolute;
+          width: 10.9%;
+          height: 27px;
+          left: 86.5%;
+          top: 41px;
+        }
+        a {
+          font-size: 18px;
+          text-decoration: none;
+          font-family: 'Conv_10710';
+          color: white;
+          transition: .5s;
+        }
+        a:hover {
+          opacity: .4;
+          transition: .1s;
+        }
+        .menu {
+          position: absolute;
+          width: 123px;
+          height: 51px;
+          left: 190px;
+          top: 28px;
+          background: #090909;
+          border: 1px solid #FFFFFF;
+          box-sizing: border-box;
+          z-index: 12;
+          transition: .5s;
+        }
+        .About2 {
+          position: absolute;
+          left: 17px;
+          top: 12px;
+          transition: .5s;
+        }
+        .contact {
+          position: absolute;
+          left: 17px;
+          top: 52px;
+          transition: .5s;
+        }
+        .comand {
+          position: absolute;
+          left: 17px;
+          top: 92px;
+          transition: .5s;
+        }
+        .book {
+          position: absolute;
+          left: 17px;
+          top: 132px;
+          transition: .5s;
+        }
+        .office {
+          position: absolute;
+          left: 17px;
+          top: 172px;
+          transition: .5s;
+        }
+        .hidden {
+          opacity: 0;
+        }
+        .blocker {
+          display: none;
+        }
+        .showmenu {
+          height: 221px;
+        }
+        .contacts {
+          position: absolute;
+          width: 506px;
+          height: 96px;
+          left: 162px;
+          top: 173px;
+          font-family: 'Conv_10710';
+          font-size: 5vw;
+          line-height: 27px;
+          color: #FFFFFF;
+        }
+        .con1 {
+          position: absolute;
+          width: 435px;
+          height: 74px;
+          left: 162px;
+          top: 314px;
+          font-family: 'Conv_10710';
+          font-size: 3.3vw;
+          line-height: 27px;
+          color: #FFFFFF;
+        }
+        .con2 {
+          position: absolute;
+          width: 435px;
+          height: 170px;
+          left: 162px;
+          top: 388px;
+          font-family: 'Conv_10710';
+          font-size: 1.66vw;
+          line-height: 35px;
+          color: #FFFFFF;
+        }
+        .con3 {
+          position: absolute;
+          width: 435px;
+          height: 74px;
+          left: 162px;
+          top: 591px;
+          font-family: 'Conv_10710';
+          font-size: 3.3vw;
+          line-height: 27px;
+          color: #FFFFFF;
+        }
+        .con4 {
+          position: absolute;
+          width: 435px;
+          height: 170px;
+          left: 162px;
+          top: 665px;
+          font-family: 'Conv_10710';
+          font-size: 1.66vw;
+          line-height: 35px;
+          color: #FFFFFF;
+        }
+        .map {
+          position: absolute;
+          width: 505px;
+          height: 505px;
+          left: 771px;
+          top: 310px;
+        }
+        .line6 {
+          position: absolute;
+          width: 91.66%;
+          height: 0px;
+          margin-left: 53px;
+          top: 962px;
+          border: 1.1px solid #FFFFFF;
+        }
+        .logo2 {
+          position: absolute;
+          width: 140px;
+          height: 75px;
+          left: 60px;
+          top: 992px;
+        }
+        .autor {
+          position: absolute;
+          width: 303px;
+          height: 46px;
+          left: 508px;
+          top: 989px;
+          font-family: 'Conv_10710';
+          font-size: 1.8vw;
+          line-height: 27px;
+          color: #FFFFFF;
+        }
+        .art {
+          position: absolute;
+          width: 303px;
+          height: 46px;
+          left: 954px;
+          top: 986px;
+          font-family: 'Conv_10710';
+          font-size: 1.8vw;
+          line-height: 27px;
+          color: #FFFFFF;
+        }
+        .hse {
+          position: absolute;
+          width: 410px;
+          height: 50px;
+          left: 508px;
+          top: 1060px;
+          font-family: 'Conv_10710';
+          font-size: 1.8vw;
+          line-height: 27px;
+          color: #FFFFFF;
+        }
+        .buy {
+          position: absolute;
+          width: 279px;
+          height: 50px;
+          left: 60px;
+          top: 1134px;
+          font-family: 'Conv_10710';
+          font-size: 1.8vw;
+          line-height: 27px;
+          color: #FFFFFF;
+        }
+        input {
+          position: absolute;
+          font-size: 1.8vw;
+          color: rgba(255, 255, 255, 0.5);
+          background: #090909;
+          border: 2px solid #FFFFFF;
+          box-sizing: border-box;
+          font-family: 'Conv_10710';
+          margin: 15px auto;
+          padding: 0 10px;
+          width: 425px;
+          height: 49px;
+          left: 509px;
+          top: 1108px;
+        }
+        .buy2 {
+          position: absolute;
+          width: 427px;
+          height: 49px;
+          left: 954px;
+          top: 1122px;
+          background: #FFA842;
+          font-size: 1.8vw;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #090909;
+          font-family: 'Conv_10710';
+          transition: .5s;
+        }
+        .buy2:hover {
+          opacity: .4;
+          transition: .1s;
+        }
+        .line7 {
+          position: absolute;
+          width: 91.66%;
+          height: 0px;
+          margin-left: 53px;
+          top: 1204px;
+          border: 1.1px solid #FFFFFF;
+        }
+    </style>
+    <script>
+    $(document).ready(function(){
+  $(window).scroll(function () {
+      if ($(this).scrollTop() > 0) {
+          $(".logo").fadeIn();
+      } else {
+          $(".logo").fadeIn();
+      }
+  });
+  $(".logo").click(function () {
+      $('body,html').animate({
+          scrollTop: 0
+      }, 400);
+      return false;
+  });
+});
+$(document).ready(function(){
+  $(".About").click(function(){
+    $(".menu").removeClass("blocker");
+    setTimeout(function(){
+      $(".menu").removeClass("hidden");
+    },100)
+    setTimeout(function(){
+      $(".menu").addClass("showmenu");
+    },200)
+    setTimeout(function(){
+      $(".About2").removeClass("hidden");
+    },100)
+    setTimeout(function(){
+      $(".contact").removeClass("hidden");
+    },210)
+    setTimeout(function(){
+      $(".comand").removeClass("hidden");
+    },290)
+    setTimeout(function(){
+      $(".book").removeClass("hidden");
+    },370)
+    setTimeout(function(){
+      $(".office").removeClass("hidden");
+    },450)
+  });
+});
+$(document).ready(function(){
+  $(".About2").click(function(){
+    $(".menu").removeClass("blocker");
+    setTimeout(function(){
+      $(".menu").addClass("hidden");
+    },400)
+    setTimeout(function(){
+      $(".menu").addClass("blocker");
+    },1500)
+    setTimeout(function(){
+      $(".menu").removeClass("showmenu");
+    },300)
+    setTimeout(function(){
+      $(".About2").addClass("hidden");
+    },300)
+    setTimeout(function(){
+      $(".contact").addClass("hidden");
+    },220)
+    setTimeout(function(){
+      $(".comand").addClass("hidden");
+    },160)
+    setTimeout(function(){
+      $(".book").addClass("hidden");
+    },80)
+    setTimeout(function(){
+      $(".office").addClass("hidden");
+    },1)
+  });
+});
+    </script>
+  </head>
+  <body>
+    <body class="forbody"></body>
+    <div class="fix">
+    <div onClick="window.location='index.html' "class="logo">
+      <img src="images/frintlogo.png" alt="">
+    </div>
+    <div class="About">
+      <a href="#">О нас</a>
+    </div>
+    <div class="menu hidden blocker">
+      <div class="About2 hidden">
+        <a href="#">О нас</a>
+      </div>
+      <div class="contact hidden">
+        <a href="contact.html">Контакты</a>
+      </div>
+      <div class="comand hidden">
+        <a href="comand.html">Команда</a>
+      </div>
+      <div class="book hidden">
+        <a href="#">Книга</a>
+      </div>
+      <div class="office hidden">
+        <a href="#">Офис</a>
+      </div>
+    </div>
+    <div class="list">
+      <a href="#">Cписок услуг</a>
+    </div>
+    <div class="found">
+      <a href="https://dimchenskiy.github.io/River/">Найти шрифт</a>
+    </div>
+    <div class="skill">
+      <a href="https://dimchenskiy.github.io/Game/">Прокачай навыки</a>
+    </div>
+    <div class="choose">
+      <a href="#">Подбери шрифт</a>
+    </div>
+    <div class="choose2">
+      <a href="#">Подбери пару</a>
+    </div>
+    </div>
+    <div class="contacts">Контакты</div>
+    <div class="con1">Офис</div>
+    <div class="con2">+7 (495) 621-87-11<br>
+      +7 (985) 883-84-46<br>
+      dimagolovkin2002@gmail.com<br>
+      Москва, Малая Пионерская, 12, 115054</div>
+    <div class="con3">По вопросам</div>
+    <div class="con4">+7 (495) 621-87-11<br>
+      +7 (985) 883-84-46<br>
+      dimagolovkin2002@gmail.com<br>
+      Москва, Малая Пионерская, 12, 115054</div>
+    <div class="map">
+      <img src="images/map.png" alt="">
+    </div>
+    <div class="line6"></div>
+    <div class="logo2">
+      <img src="images/frintlogo.png" alt="">
+    </div>
+    <div class="autor">Дмитрий Головкин</div>
+    <div class="art">Арт-практика</div>
+    <div class="hse">HSE ART AND DESIGN SCHOOL</div>
+    <div class="buy">Закажи шрифт</div>
+    <form action="index.html" method="post">
+     <input type="email" name="" value="" placeholder="email">
+    </form>
+    <div onClick="window.location='https://dimchenskiy.github.io/River/' "class="buy2">Заказать</div>
+    <div class="line7"></div>
+  </body>
+</html>
