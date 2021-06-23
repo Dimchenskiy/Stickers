@@ -155,6 +155,9 @@ html {
   .back {
     display: none;
   }
+  .burgermenu {
+    display: none;
+  }
   a {
     font-size: 18px;
     text-decoration: none;

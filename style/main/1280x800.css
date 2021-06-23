@@ -88,6 +88,9 @@ html {
   .back {
     display: none;
   }
+  .burgermenu {
+    display: none;
+  }
   .About {
     position: absolute;
     width: 13%;
