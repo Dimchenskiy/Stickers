@@ -81,6 +81,9 @@ html {
   .burger {
     display: none;
   }
+  .back {
+    display: none;
+  }
   img {
     width: 100%;
     height: 100%;

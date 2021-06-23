@@ -85,6 +85,9 @@ html {
   .burger {
     display: none;
   }
+  .back {
+    display: none;
+  }
   .About {
     position: absolute;
     width: 13%;
