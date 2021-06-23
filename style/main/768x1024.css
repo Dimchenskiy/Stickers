@@ -1,0 +1,869 @@
+html {
+  background: #090909;
+  display: block;
+  height: 4000px;
+  width: 100%;
+}
+@font-face {
+    font-family: 'Misto';
+    src: url('fonts/Misto.eot');
+    src: url('fonts/Misto.eot') format('embedded-opentype'),
+         url('fonts/Misto.woff2') format('woff2'),
+         url('fonts/Misto.woff') format('woff'),
+         url('fonts/Misto.ttf') format('truetype'),
+         url('fonts/Misto.svg#Misto') format('svg');
+}
+@font-face {
+  font-family: 'Conv_10710';
+  src: url('fonts/10710.eot');
+  src: local('☺'), url('fonts/10710.woff') format('woff'), url('fonts/10710.ttf') format('truetype'), url('fonts/10710.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+  .forbody {
+    background: #090909;
+    transition: 1s;
+    width: 100%;
+  }
+  /* .picture {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1440px;
+    height: 4424px;
+    background: url(images/example.png);
+    opacity: .2;
+  } */
+  .header {
+    position: absolute;
+    width: 75%;
+    height: 245px;
+    left: 14%;
+    top: 331px;
+    font-size: 11vw;
+    font-family: 'Misto';
+    color: white;
+    text-align: center;
+    line-height: 11vw;
+  }
+  .header2 {
+    position: absolute;
+    width: 48.5%;
+    height: 188px;
+    left: 27.9%;
+    top: 646px;
+    font-size: 3vw;
+    font-family: 'Conv_10710';
+    color: white;
+    text-align: center;
+    line-height: 3.8vw;
+  }
+  .fix {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background: #090909;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+  }
+  .logo {
+    position: absolute;
+    width: 81px;
+    height: 42px;
+    left: 4.5%;
+    top: 32px;
+    transition: .5s;
+  }
+  .logo:hover {
+    opacity: .4;
+    transition: .1s;
+    cursor: pointer;
+  }
+  .burger {
+    position: absolute;
+    left: 88.5%;
+    top: 36px;
+    width: 52.24px;
+    height: 37.49px;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  .About {
+    position: absolute;
+    width: 13%;
+    height: 20px;
+    left: 14.5%;
+    top: 41px;
+    transition: .5s;
+    display: none;
+  }
+  .About:hover {
+    opacity: .4;
+    transition: .1s;
+  }
+  .list {
+    position: absolute;
+    width: 14.3%;
+    height: 27px;
+    left: 24.3%;
+    top: 41px;
+    display: none;
+  }
+  .found {
+    position: absolute;
+    width: 12.5%;
+    height: 27px;
+    left: 38.4%;
+    top: 41px;
+    transition: .5s;
+    display: none;
+  }
+  .found:hover {
+    opacity: .4;
+    transition: .1s;
+  }
+  .skill {
+    position: absolute;
+    width: 15%;
+    height: 27px;
+    left: 53%;
+    top: 41px;
+    transition: .5s;
+    display: none;
+  }
+  .skill:hover {
+    opacity: .4;
+    transition: .1s;
+  }
+  .choose {
+    position: absolute;
+    width: 13%;
+    height: 27px;
+    left: 70.2%;
+    top: 41px;
+    transition: .5s;
+    display: none;
+  }
+  .choose:hover {
+    opacity: .4;
+    transition: .1s;
+  }
+  .choose2 {
+    position: absolute;
+    width: 11.9%;
+    height: 27px;
+    left: 86.5%;
+    top: 41px;
+    transition: .5s;
+    display: none;
+  }
+  .choose2:hover {
+    opacity: .4;
+    transition: .1s;
+  }
+  a {
+    font-size: 18px;
+    text-decoration: none;
+    font-family: 'Conv_10710';
+    color: white;
+    transition: .5s;
+  }
+  a:hover {
+    opacity: .4;
+    transition: .1s;
+  }
+  .wordG {
+    position: absolute;
+    width: 120px;
+    height: 117px;
+    left: 74.15%;
+    top: 162px;
+  }
+  .wordW {
+    position: absolute;
+    width: 102px;
+    height: 79px;
+    left: 81px;
+    top: 767px;
+  }
+  .wordR {
+    position: absolute;
+    width: 232.73px;
+    height: 166.64px;
+    left: 103px;
+    top: 765px;
+    transform: rotate(-19.56deg);
+  }
+  .Arrow {
+    position: absolute;
+    width: 40px;
+    height: 55px;
+    left: 51%;
+    top: 817px;
+  }
+  .wordЙ {
+    position: absolute;
+    width: 177px;
+    height: 105px;
+    left: 67.77%;
+    top: 979px;
+  }
+  .wordA {
+    position: absolute;
+    width: 100.31px;
+    height: auto;
+    left: 103px;
+    top: 1038.03px;
+  }
+  .why {
+    position: absolute;
+    width: 80%;
+    height: 96px;
+    left: 12%;
+    top: 1220px;
+    font-size: 7vw;
+    font-family: 'Misto';
+    color: white;
+    text-align: center;
+    line-height: 5.5vw;
+  }
+  .wordб {
+    position: absolute;
+    width: 129.78px;
+    height: 184.89px;
+    left: 75.2%;
+    top: 1303px;
+  }
+  .wordж {
+    position: absolute;
+    width: 126px;
+    height: auto;
+    left: 59.59%;
+    top: 1450.3px;
+  }
+  .Arrow2 {
+    position: absolute;
+    width: 40px;
+    height: 55px;
+    left: 51%;
+    top: 1340px;
+  }
+  .wordY {
+    position: absolute;
+    width: 253.74px;
+    height: 141.12px;
+    left: 6%;
+    top: 1603.89px;
+  }
+  .wordW2 {
+    position: absolute;
+    width: 120.44px;
+    height: 93.46px;
+    left: 39%;
+    top: 1620px;
+    transform: rotate(21.97deg);
+  }
+  .line {
+    position: absolute;
+    width: 91.66%;
+    height: 0px;
+    margin-left: 23px;
+    top: 1806px;
+    border: 1.1px solid #FFFFFF;
+  }
+  .money {
+    position: absolute;
+    width: 341px;
+    height: 148px;
+    left: 37px;
+    top: 1833px;
+    font-family: 'Conv_10710';
+    font-size: 7vw;
+    line-height: 55px;
+    color: #FFFFFF;
+  }
+  .pic1 {
+    position: absolute;
+    width: 313px;
+    height: auto;
+    left: 37px;
+    top: 2185px;
+  }
+  .moneytext {
+    position: absolute;
+    width: 70%;
+    height: 130px;
+    left: 37px;
+    top: 2018px;
+    font-family: 'Conv_10710';
+    font-size: 3.5vw;
+    line-height: 35px;
+    color: #FFFFFF;
+  }
+  .line2 {
+    position: absolute;
+    width: 91.66%;
+    height: 0px;
+    margin-left: 23px;
+    top: 2660px;
+    border: 1.1px solid #FFFFFF;
+  }
+  .popular {
+    position: absolute;
+    width: 341px;
+    height: 148px;
+    left: 37px;
+    top: 2690px;
+    font-family: 'Conv_10710';
+    font-size: 7vw;
+    line-height: 55px;
+    color: #FFFFFF;
+  }
+  .populartext {
+    position: absolute;
+    width: 70%;
+    height: 157px;
+    left: 37px;
+    top: 2832px;
+    font-family: 'Conv_10710';
+    font-size: 3.5vw;
+    line-height: 35px;
+    color: #FFFFFF;
+  }
+  .pic2 {
+    position: absolute;
+    width: 313px;
+    height: auto;
+    left: 37px;
+    top: 3010px;
+  }
+  .line3 {
+    position: absolute;
+    width: 91.66%;
+    height: 0px;
+    margin-left: 23px;
+    top: 3481px;
+    border: 1.1px solid #FFFFFF;
+  }
+  .expert {
+    position: absolute;
+    width: 391px;
+    height: 148px;
+    left: 37px;
+    top: 3510px;
+    font-family: 'Conv_10710';
+    font-size: 7vw;
+    line-height: 55px;
+    color: #FFFFFF;
+  }
+  .pic3 {
+    position: absolute;
+    width: 313px;
+    height: auto;
+    left: 37px;
+    top: 3874px;
+  }
+  .experttext {
+    position: absolute;
+    width: 460px;
+    height: 157px;
+    left: 37px;
+    top: 3650px;
+    font-family: 'Conv_10710';
+    font-size: 3.5vw;
+    line-height: 35px;
+    color: #FFFFFF;
+  }
+  .linemodern {
+    position: absolute;
+    top: 4371px;
+    width: 100%;
+    height: 10px;
+    left: 0px;
+  }
+  .boxline {
+    position: absolute;
+    width: 23px;
+    height: 10px;
+    top: 0px;
+    right: 0px;
+    background: #090909;
+    z-index: 2;
+  }
+  .boxline2 {
+    position: absolute;
+    width: 23px;
+    height: 10px;
+    top: 0px;
+    left: 0px;
+    background: #090909;
+    z-index: 2;
+  }
+  .line4 {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 1px;
+    background: white;
+  }
+  .line5 {
+    position: absolute;
+    width: 91.66%;
+    height: 0px;
+    margin-left: 23px;
+    top: 4905px;
+    border: 1.1px solid #FFFFFF;
+  }
+  .try {
+    position: absolute;
+    width: 70%;
+    height: 165px;
+    left: 15%;
+    top: 4440px;
+    font-size: 11vw;
+    font-family: 'Misto';
+    color: white;
+    text-align: center;
+    line-height: 11vw;
+  }
+  .start {
+    position: absolute;
+    width: 160px;
+    height: 69px;
+    left: 39%;
+    top: 4640px;
+    background: #FFA842;
+    border-radius: 161px;
+    transition: .5s;
+  }
+  .starttext {
+    position: absolute;
+    width: 50px;
+    height: 35px;
+    left: 30px;
+    top: 20px;
+    font-family: 'Conv_10710';
+    font-size: 30px;
+    line-height: 27px;
+    color: #090909;
+  }
+  .start:hover {
+    opacity: .2;
+    cursor: pointer;
+    transition: .1s;
+  }
+  .telega {
+    position: absolute;
+    width: 323px;
+    height: 69px;
+    left: 29%;
+    top: 4750px;
+    border: 2px solid #FFA842;
+    box-sizing: border-box;
+    border-radius: 161px;
+    transition: .5s;
+  }
+  .telegatext {
+    position: absolute;
+    width: 240px;
+    height: 35px;
+    left: 27px;
+    top: 19px;
+    font-family: 'Conv_10710';
+    font-size: 30px;
+    line-height: 27px;
+    color: #FFA842;
+  }
+  .telegav {
+    position: absolute;
+    width: 35px;
+    height: 29px;
+    left: 259px;
+    top: 18px;
+  }
+  .telega:hover {
+    opacity: .4;
+    cursor: pointer;
+    transition: .1s;
+  }
+  .wordAor {
+    position: absolute;
+    width: 231px;
+    height: auto;
+    left: 2.5%;
+    top: 4920px;
+  }
+  .wordб2 {
+    position: absolute;
+    width: 87px;
+    height: 88px;
+    left: 32.8%;
+    top: 4974px;
+  }
+  .wordY2 {
+    position: absolute;
+    width: 190px;
+    height: auto;
+    left: 33.4%;
+    top: 5080px;
+  }
+  .wordg2 {
+    position: absolute;
+    width: 20.05%;
+    height: auto;
+    left: 46.75%;
+    top: 4945px;
+  }
+  .wordw3 {
+    position: absolute;
+    width: 12.63%;
+    height: auto;
+    left: 78.63%;
+    top: 4942px;
+  }
+  .wordщ {
+    position: absolute;
+    width: 21.22%;
+    height: auto;
+    left: 72.93%;
+    top: 5050px;
+  }
+  .wordg4 {
+    position: absolute;
+    width: 17.96%;
+    height: auto;
+    left: 5.43%;
+    top: 5235px;
+  }
+  .wordй2 {
+    position: absolute;
+    width: 14.97%;
+    height: auto;
+    left: 28.61%;
+    top: 5256px;
+  }
+  .wordY3 {
+    position: absolute;
+    width: 45.7%;
+    height: auto;
+    left: 46.91%;
+    top: 5175px;
+  }
+  .wordб3 {
+    position: absolute;
+    width: 21.45%;
+    height: auto;
+    left: 1.68%;
+    top: 5411.46px;
+  }
+  .wordж2 {
+    position: absolute;
+    width: 35.41%;
+    height: auto;
+    left: 24%;
+    top: 5413px;
+  }
+  .wordgg {
+    position: absolute;
+    width: 16.79%;
+    height: auto;
+    left: 63.48%;
+    top: 5418px;
+    z-index: 1;
+  }
+  .wordbag {
+    position: absolute;
+    width: 17.57%;
+    height: auto;
+    left: 75.66%;
+    top: 5525px;
+  }
+  .line6 {
+    position: absolute;
+    width: 91.66%;
+    height: 0px;
+    margin-left: 23px;
+    top: 5692px;
+    border: 1.1px solid #FFFFFF;
+  }
+  .logo2 {
+    position: absolute;
+    width: 140px;
+    height: auto;
+    left: 40%;
+    top: 5750px;
+  }
+  .autor {
+    position: absolute;
+    width: 303px;
+    height: 46px;
+    left: 37px;
+    top: 6072px;
+    font-family: 'Conv_10710';
+    font-size: 24px;
+    line-height: 27px;
+    color: #FFFFFF;
+  }
+  .art {
+    position: absolute;
+    width: 203px;
+    height: 46px;
+    left: 37px;
+    top: 6126px;
+    font-family: 'Conv_10710';
+    font-size: 24px;
+    line-height: 27px;
+    color: #FFFFFF;
+  }
+  .hse {
+    position: absolute;
+    width: 380px;
+    height: 50px;
+    left: 37px;
+    top: 6180px;
+    font-family: 'Conv_10710';
+    font-size: 24px;
+    line-height: 27px;
+    color: #FFFFFF;
+  }
+  .buy {
+    position: absolute;
+    width: 279px;
+    height: 50px;
+    left: 37px;
+    top: 5860px;
+    font-family: 'Conv_10710';
+    font-size: 24px;
+    line-height: 27px;
+    color: #FFFFFF;
+  }
+  input {
+    position: absolute;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.5);
+    background: #090909;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    font-family: 'Conv_10710';
+    margin: 15px auto;
+    padding: 0 10px;
+    width: 91.66%;
+    height: 50px;
+    margin-left: 23px;
+    top: 5900px;
+  }
+  .buy2 {
+    position: absolute;
+    width: 91.66%;
+    height: 50px;
+    margin-left: 23px;
+    top: 5990px;
+    background: #FFA842;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #090909;
+    font-family: 'Conv_10710';
+    transition: .5s;
+  }
+  .buy2:hover {
+    opacity: .4;
+    transition: .1s;
+  }
+  .line7 {
+    position: absolute;
+    width: 91.66%;
+    height: 0px;
+    margin-left: 23px;
+    top: 6234px;
+    border: 1.1px solid #FFFFFF;
+  }
+  .menu {
+    position: absolute;
+    width: 123px;
+    height: 51px;
+    left: 13.19%;
+    top: 28px;
+    background: #090909;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    z-index: 12;
+    transition: .5s;
+  }
+  .About2 {
+    position: absolute;
+    left: 17px;
+    top: 12px;
+    transition: .5s;
+  }
+  .contact {
+    position: absolute;
+    left: 17px;
+    top: 52px;
+    transition: .5s;
+  }
+  .comand {
+    position: absolute;
+    left: 17px;
+    top: 92px;
+    transition: .5s;
+  }
+  .book {
+    position: absolute;
+    left: 17px;
+    top: 132px;
+    transition: .5s;
+  }
+  .office {
+    position: absolute;
+    left: 17px;
+    top: 172px;
+    transition: .5s;
+  }
+  .hidden {
+    opacity: 0;
+  }
+  .blocker {
+    display: none;
+  }
+  .showmenu {
+    height: 221px;
+  }
+  .burgermenu {
+    position: fixed;
+    width: 410px;
+    height: 100vh;
+    right: -475px;
+    top: 0px;
+    background: #090909;
+    z-index: 10;
+    transition: .9s;
+  }
+  .back {
+    position: absolute;
+    width: 52px;
+    height: 45.88px;
+    left: 322px;
+    top: 37px;
+  }
+  .burabout {
+    position: absolute;
+    width: 92px;
+    height: 53px;
+    left: 63px;
+    top: 123px;
+    font-size: 36px;
+    text-decoration: none;
+    font-family: 'Conv_10710';
+    color: white;
+  }
+  .burcontact {
+    position: absolute;
+    width: 92px;
+    height: 53px;
+    left: 63px;
+    top: 195px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Conv_10710';
+    color: white;
+  }
+  .burcomand {
+    position: absolute;
+    width: 92px;
+    height: 53px;
+    left: 63px;
+    top: 232px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Conv_10710';
+    color: white;
+  }
+  .burbook {
+    position: absolute;
+    width: 92px;
+    height: 53px;
+    left: 63px;
+    top: 268px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Conv_10710';
+    color: white;
+  }
+  .burcoffice {
+    position: absolute;
+    width: 92px;
+    height: 53px;
+    left: 63px;
+    top: 305px;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Conv_10710';
+    color: white;
+  }
+  .burfound {
+    position: absolute;
+    width: 215px;
+    height: 53px;
+    left: 63px;
+    top: 391px;
+    font-size: 36px;
+    text-decoration: none;
+    font-family: 'Conv_10710';
+    color: white;
+  }
+  .burskill {
+    position: absolute;
+    width: 281px;
+    height: 53px;
+    left: 63px;
+    top: 487px;
+    font-size: 36px;
+    text-decoration: none;
+    font-family: 'Conv_10710';
+    color: white;
+  }
+  .burchoose {
+    position: absolute;
+    width: 281px;
+    height: 53px;
+    left: 63px;
+    top: 583px;
+    font-size: 36px;
+    text-decoration: none;
+    font-family: 'Conv_10710';
+    color: white;
+  }
+  .burchoose2 {
+    position: absolute;
+    width: 281px;
+    height: 53px;
+    left: 63px;
+    top: 679px;
+    font-size: 36px;
+    text-decoration: none;
+    font-family: 'Conv_10710';
+    color: white;
+  }
+  .showburger {
+    transform: translate(-475px);
+  }
+  .dark {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    pointer-events: none;
+    background: #090909;
+    opacity: 0;
+    transition: .5s;
+  }
+  .darkmode {
+    opacity: .8;
+    transition: .5s;
+  }

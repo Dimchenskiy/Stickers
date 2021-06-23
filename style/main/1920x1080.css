@@ -1,0 +1,699 @@
+html {
+  background: #090909;
+  display: block;
+  height: 2200px;
+}
+@font-face {
+    font-family: 'Misto';
+    src: url('fonts/Misto.eot');
+    src: url('fonts/Misto.eot') format('embedded-opentype'),
+         url('fonts/Misto.woff2') format('woff2'),
+         url('fonts/Misto.woff') format('woff'),
+         url('fonts/Misto.ttf') format('truetype'),
+         url('fonts/Misto.svg#Misto') format('svg');
+}
+@font-face {
+  font-family: 'Conv_10710';
+  src: url('fonts/10710.eot');
+  src: local('☺'), url('fonts/10710.woff') format('woff'), url('fonts/10710.ttf') format('truetype'), url('fonts/10710.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+  .forbody {
+    background: #090909;
+    transition: 1s;
+  }
+  /* .picture {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1440px;
+    height: 4424px;
+    background: url(images/example.png);
+    opacity: .2;
+  } */
+  .header {
+    position: absolute;
+    width: 80%;
+    height: 245px;
+    left: 10%;
+    top: 401px;
+    font-size: 6.66vw;
+    font-family: 'Misto';
+    color: white;
+    text-align: center;
+    line-height: 6.68vw;
+  }
+  .header2 {
+    position: absolute;
+    width: 34.5%;
+    height: 188px;
+    left: 32.9%;
+    top: 706px;
+    font-size: 1.66vw;
+    font-family: 'Conv_10710';
+    color: white;
+    text-align: center;
+    line-height: 2.43vw;
+  }
+  .fix {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    background: #090909;
+    top: 0px;
+    left: 0px;
+    z-index: 10;
+  }
+  .logo {
+    position: absolute;
+    width: 97.2px;
+    height: 50.4px;
+    left: 4.5%;
+    top: 32px;
+    transition: .5s;
+  }
+  .logo:hover {
+    opacity: .4;
+    transition: .1s;
+    cursor: pointer;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+  }
+  .burger {
+    display: none;
+  }
+  .About {
+    position: absolute;
+    width: 13%;
+    height: 20px;
+    left: 14.5%;
+    top: 41px;
+    transition: .5s;
+  }
+  .About:hover {
+    opacity: .4;
+    transition: .1s;
+  }
+  .list {
+    position: absolute;
+    width: 14.3%;
+    height: 27px;
+    left: 24.3%;
+    top: 41px;
+  }
+  .found {
+    position: absolute;
+    width: 10.5%;
+    height: 27px;
+    left: 38.4%;
+    top: 41px;
+    transition: .5s;
+  }
+  .found:hover {
+    opacity: .4;
+    transition: .1s;
+  }
+  .skill {
+    position: absolute;
+    width: 14%;
+    height: 27px;
+    left: 53%;
+    top: 41px;
+    transition: .5s;
+  }
+  .skill:hover {
+    opacity: .4;
+    transition: .1s;
+  }
+  .choose {
+    position: absolute;
+    width: 12%;
+    height: 27px;
+    left: 70.2%;
+    top: 41px;
+    transition: .5s;
+  }
+  .choose:hover {
+    opacity: .4;
+    transition: .1s;
+  }
+  .choose2 {
+    position: absolute;
+    width: 10.9%;
+    height: 27px;
+    left: 86.5%;
+    top: 41px;
+    transition: .5s;
+  }
+  .choose2:hover {
+    opacity: .4;
+    transition: .1s;
+  }
+  a {
+    font-size: 24px;
+    text-decoration: none;
+    font-family: 'Conv_10710';
+    color: white;
+    transition: .5s;
+  }
+  a:hover {
+    opacity: .4;
+    transition: .1s;
+  }
+  .wordG {
+    position: absolute;
+    width: 160px;
+    height: auto;
+    left: 87.15%;
+    top: 252px;
+  }
+  .wordW {
+    position: absolute;
+    width: 152px;
+    height: auto;
+    left: 81px;
+    top: 577px;
+  }
+  .wordR {
+    position: absolute;
+    width: 282.73px;
+    height: auto;
+    left: 103px;
+    top: 625px;
+    transform: rotate(-19.56deg);
+  }
+  .Arrow {
+    position: absolute;
+    width: 40px;
+    height: 55px;
+    left: 48.6%;
+    top: 857px;
+  }
+  .wordЙ {
+    position: absolute;
+    width: 237px;
+    height: auto;
+    left: 77.77%;
+    top: 909px;
+  }
+  .wordA {
+    position: absolute;
+    width: 210.31px;
+    height: auto;
+    left: 133px;
+    top: 1108.03px;
+  }
+  .why {
+    position: absolute;
+    width: 80%;
+    height: 96px;
+    left: 10%;
+    top: 1370px;
+    font-size: 4.44vw;
+    font-family: 'Misto';
+    color: white;
+    text-align: center;
+    line-height: 5.5vw;
+  }
+  .wordб {
+    position: absolute;
+    width: 179.78px;
+    height: auto;
+    left: 85.2%;
+    top: 1403px;
+  }
+  .wordж {
+    position: absolute;
+    width: 206px;
+    height: auto;
+    left: 74.59%;
+    top: 1530.3px;
+  }
+  .Arrow2 {
+    position: absolute;
+    width: 40px;
+    height: 55px;
+    left: 48.6%;
+    top: 1625px;
+  }
+  .wordY {
+    position: absolute;
+    width: 303.74px;
+    height: auto;
+    left: 124px;
+    top: 1703.89px;
+  }
+  .wordW2 {
+    position: absolute;
+    width: 170.44px;
+    height: auto;
+    left: 435px;
+    top: 1720px;
+    transform: rotate(21.97deg);
+  }
+  .line {
+    position: absolute;
+    width: 92.66%;
+    height: 0px;
+    margin-left: 53px;
+    top: 2006px;
+    border: 1.1px solid #FFFFFF;
+  }
+  .money {
+    position: absolute;
+    width: 441px;
+    height: 148px;
+    left: 66px;
+    top: 2053px;
+    font-family: 'Conv_10710';
+    font-size: 3.47vw;
+    line-height: 65px;
+    color: #FFFFFF;
+  }
+  .pic1 {
+    position: absolute;
+    width: 373px;
+    height: auto;
+    left: 50.9%;
+    top: 2038px;
+  }
+  .moneytext {
+    position: absolute;
+    width: 360px;
+    height: 130px;
+    left: 74.65%;
+    top: 2038px;
+    font-family: 'Conv_10710';
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+  }
+  .line2 {
+    position: absolute;
+    width: 92.66%;
+    height: 0px;
+    margin-left: 53px;
+    top: 2600px;
+    border: 1.1px solid #FFFFFF;
+  }
+  .popular {
+    position: absolute;
+    width: 441px;
+    height: 148px;
+    left: 68px;
+    top: 2651px;
+    font-family: 'Conv_10710';
+    font-size: 3.47vw;
+    line-height: 65px;
+    color: #FFFFFF;
+  }
+  .populartext {
+    position: absolute;
+    width: 360px;
+    height: 157px;
+    left: 51.8%;
+    top: 2642px;
+    font-family: 'Conv_10710';
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+  }
+  .pic2 {
+    position: absolute;
+    width: 374px;
+    height: auto;
+    left: 74%;
+    top: 2640px;
+  }
+  .line3 {
+    position: absolute;
+    width: 92.66%;
+    height: 0px;
+    margin-left: 53px;
+    top: 3181px;
+    border: 1.1px solid #FFFFFF;
+  }
+  .expert {
+    position: absolute;
+    width: 441px;
+    height: 148px;
+    left: 68px;
+    top: 3240px;
+    font-family: 'Conv_10710';
+    font-size: 3.47vw;
+    line-height: 65px;
+    color: #FFFFFF;
+  }
+  .pic3 {
+    position: absolute;
+    width: 373px;
+    height: auto;
+    left: 50.9%;
+    top: 3234px;
+  }
+  .experttext {
+    position: absolute;
+    width: 360px;
+    height: 157px;
+    left: 75%;
+    top: 3236px;
+    font-family: 'Conv_10710';
+    font-size: 24px;
+    line-height: 32px;
+    color: #FFFFFF;
+  }
+  .line4 {
+    position: absolute;
+    width: 92.66%;
+    height: 0px;
+    margin-left: 53px;
+    top: 3801px;
+    border: 1.1px solid #FFFFFF;
+  }
+  .line5 {
+    position: absolute;
+    width: 0px;
+    height: 678px;
+    left: 50%;
+    top: 3836px;
+    border: 1.1px solid #FFFFFF;
+  }
+  .try {
+    position: absolute;
+    width: 40%;
+    height: 165px;
+    left: 66px;
+    top: 3984px;
+    font-size: 4.44vw;
+    font-family: 'Misto';
+    color: white;
+    text-align: left;
+    line-height: 5.5vw;
+  }
+  .start {
+    position: absolute;
+    width: 130px;
+    height: 59px;
+    left: 66px;
+    top: 4218px;
+    background: #FFA842;
+    border-radius: 161px;
+    transition: .5s;
+  }
+  .starttext {
+    position: absolute;
+    width: 50px;
+    height: 35px;
+    left: 30px;
+    top: 16px;
+    font-family: 'Conv_10710';
+    font-size: 24px;
+    line-height: 27px;
+    color: #090909;
+  }
+  .start:hover {
+    opacity: .2;
+    cursor: pointer;
+    transition: .1s;
+  }
+  .telega {
+    position: absolute;
+    width: 283px;
+    height: 59px;
+    left: 66px;
+    top: 4314px;
+    border: 2px solid #FFA842;
+    box-sizing: border-box;
+    border-radius: 161px;
+    transition: .5s;
+  }
+  .telegatext {
+    position: absolute;
+    width: 240px;
+    height: 35px;
+    left: 27px;
+    top: 15px;
+    font-family: 'Conv_10710';
+    font-size: 24px;
+    line-height: 27px;
+    color: #FFA842;
+  }
+  .telegav {
+    position: absolute;
+    width: 35px;
+    height: 29px;
+    left: 215px;
+    top: 13px;
+  }
+  .telega:hover {
+    opacity: .4;
+    cursor: pointer;
+    transition: .1s;
+  }
+  .wordAor {
+    position: absolute;
+    width: 251px;
+    height: auto;
+    left: 50.5%;
+    top: 3824px;
+  }
+  .wordб2 {
+    position: absolute;
+    width: 127px;
+    height: auto;
+    left: 66.8%;
+    top: 3844px;
+  }
+  .wordY2 {
+    position: absolute;
+    width: 230px;
+    height: auto;
+    left: 65.4%;
+    top: 3967px;
+  }
+  .wordg2 {
+    position: absolute;
+    width: 174px;
+    height: auto;
+    left: 74.75%;
+    top: 3835px;
+  }
+  .wordw3 {
+    position: absolute;
+    width: 117px;
+    height: auto;
+    left: 86.63%;
+    top: 3852px;
+  }
+  .wordщ {
+    position: absolute;
+    width: 173px;
+    height: auto;
+    left: 84.93%;
+    top: 3967px;
+  }
+  .wordg4 {
+    position: absolute;
+    width: 138px;
+    height: auto;
+    left: 52.43%;
+    top: 4105px;
+  }
+  .wordй2 {
+    position: absolute;
+    width: 115px;
+    height: auto;
+    left: 63.61%;
+    top: 4126px;
+  }
+  .wordY3 {
+    position: absolute;
+    width: 321px;
+    height: 178px;
+    left: 72.91%;
+    top: 4077px;
+  }
+  .wordб3 {
+    position: absolute;
+    width: 174.79px;
+    height: auto;
+    left: 50.68%;
+    top: 4270.46px;
+  }
+  .wordж2 {
+    position: absolute;
+    width: 272px;
+    height: auto;
+    left: 61.52%;
+    top: 4283px;
+  }
+  .wordgg {
+    position: absolute;
+    width: 149px;
+    height: auto;
+    left: 80.48%;
+    top: 4283px;
+    z-index: 1;
+  }
+  .wordbag {
+    position: absolute;
+    width: 155px;
+    height: auto;
+    left: 86.66%;
+    top: 4355px;
+  }
+  .line6 {
+    position: absolute;
+    width: 92.66%;
+    height: 0px;
+    margin-left: 53px;
+    top: 4562px;
+    border: 1.1px solid #FFFFFF;
+  }
+  .logo2 {
+    position: absolute;
+    width: 140px;
+    height: 75px;
+    left: 60px;
+    top: 4592px;
+  }
+  .autor {
+    position: absolute;
+    width: 303px;
+    height: 46px;
+    left: 35.27%;
+    top: 4589px;
+    font-family: 'Conv_10710';
+    font-size: 24px;
+    line-height: 27px;
+    color: #FFFFFF;
+  }
+  .art {
+    position: absolute;
+    width: 303px;
+    height: 46px;
+    left: 66.25%;
+    top: 4586px;
+    font-family: 'Conv_10710';
+    font-size: 24px;
+    line-height: 27px;
+    color: #FFFFFF;
+  }
+  .hse {
+    position: absolute;
+    width: 410px;
+    height: 50px;
+    left: 35.27%;
+    top: 4660px;
+    font-family: 'Conv_10710';
+    font-size: 24px;
+    line-height: 27px;
+    color: #FFFFFF;
+  }
+  .buy {
+    position: absolute;
+    width: 279px;
+    height: 50px;
+    left: 60px;
+    top: 4734px;
+    font-family: 'Conv_10710';
+    font-size: 24px;
+    line-height: 27px;
+    color: #FFFFFF;
+  }
+  input {
+    position: absolute;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.5);
+    background: #090909;
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    font-family: 'Conv_10710';
+    margin: 15px auto;
+    padding: 0 10px;
+    width: 29.51%;
+    height: 49px;
+    left: 35.27%;
+    top: 4708px;
+  }
+  .buy2 {
+    position: absolute;
+    width: 29.51%;
+    height: 49px;
+    left: 66.25%;
+    top: 4722px;
+    background: #FFA842;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #090909;
+    font-family: 'Conv_10710';
+    transition: .5s;
+  }
+  .buy2:hover {
+    opacity: .4;
+    transition: .1s;
+  }
+  .line7 {
+    position: absolute;
+    width: 92.66%;
+    height: 0px;
+    margin-left: 53px;
+    top: 4804px;
+    border: 1.1px solid #FFFFFF;
+  }
+  .menu {
+    position: absolute;
+    width: 143px;
+    height: 51px;
+    left: 13.19%;
+    top: 28px;
+    background: #090909;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    z-index: 12;
+    transition: .5s;
+  }
+  .About2 {
+    position: absolute;
+    left: 17px;
+    top: 12px;
+    transition: .5s;
+  }
+  .contact {
+    position: absolute;
+    left: 17px;
+    top: 70px;
+    transition: .5s;
+  }
+  .comand {
+    position: absolute;
+    left: 17px;
+    top: 117px;
+    transition: .5s;
+  }
+  .book {
+    position: absolute;
+    left: 17px;
+    top: 165px;
+    transition: .5s;
+  }
+  .office {
+    position: absolute;
+    left: 17px;
+    top: 212px;
+    transition: .5s;
+  }
+  .hidden {
+    opacity: 0;
+  }
+  .blocker {
+    display: none;
+  }
+  .showmenu {
+    height: 271px;
+  }
