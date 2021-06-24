@@ -4,13 +4,13 @@
     <meta charset="utf-8">
     <title></title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <link rel='stylesheet' media='screen and (min-width: 1440px) and (max-width: 2560px)' href='style/1920x1080.css' />
-    <link rel='stylesheet' media='screen and (min-width: 1367px) and (max-width: 1440px)' href='style/1440x900.css' />
-    <link rel='stylesheet' media='screen and (min-width: 1300px) and (max-width: 1366px)' href='style/1366x768.css' />
-    <link rel='stylesheet' media='screen and (min-width: 1200px) and (max-width: 1300px)' href='style/1280x800.css' />
-    <link rel='stylesheet' media='screen and (min-width: 900px) and (max-width: 1200px)' href='style/1024x768.css' />
-    <link rel='stylesheet' media='screen and (min-width: 500px) and (max-width: 900px)' href='style/768x1024.css' />
-    <link rel='stylesheet' media='screen and (min-width: 300px) and (max-width: 499px)' href='style/414x896.css' />
+    <link rel='stylesheet' media='screen and (min-width: 1440px) and (max-width: 2560px)' href='style/book/1920x1080.css' />
+    <link rel='stylesheet' media='screen and (min-width: 1367px) and (max-width: 1440px)' href='style/book/1440x900.css' />
+    <link rel='stylesheet' media='screen and (min-width: 1300px) and (max-width: 1366px)' href='style/book/1366x768.css' />
+    <link rel='stylesheet' media='screen and (min-width: 1200px) and (max-width: 1300px)' href='style/book/1280x800.css' />
+    <link rel='stylesheet' media='screen and (min-width: 900px) and (max-width: 1200px)' href='style/book/1024x768.css' />
+    <link rel='stylesheet' media='screen and (min-width: 650px) and (max-width: 900px)' href='style/book/768x1024.css' />
+    <link rel='stylesheet' media='screen and (min-width: 300px) and (max-width: 650px)' href='style/book/414x896.css' />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <style media="screen">
       html {
@@ -34,333 +34,7 @@
       	font-weight: normal;
       	font-style: normal;
       }
-        .forbody {
-          background: #090909;
-          transition: 1s;
-        }
-        .fix {
-          position: fixed;
-          width: 100%;
-          height: 80px;
-          background: #090909;
-          top: 0px;
-          left: 0px;
-          z-index: 10;
-        }
-        .logo {
-          position: absolute;
-          width: 81px;
-          height: 42px;
-          left: 4.5%;
-          top: 32px;
-          transition: .5s;
-        }
-        .logo:hover {
-          opacity: .4;
-          transition: .1s;
-          cursor: pointer;
-        }
-        img {
-          width: 100%;
-          height: 100%;
-        }
-        .About {
-          position: absolute;
-          width: 13%;
-          height: 20px;
-          left: 14.5%;
-          top: 41px;
-        }
-        .list {
-          position: absolute;
-          width: 14.3%;
-          height: 27px;
-          left: 24.3%;
-          top: 41px;
-        }
-        .found {
-          position: absolute;
-          width: 10.5%;
-          height: 27px;
-          left: 38.4%;
-          top: 41px;
-        }
-        .skill {
-          position: absolute;
-          width: 14%;
-          height: 27px;
-          left: 53%;
-          top: 41px;
-        }
-        .choose {
-          position: absolute;
-          width: 12%;
-          height: 27px;
-          left: 70.2%;
-          top: 41px;
-        }
-        .choose2 {
-          position: absolute;
-          width: 10.9%;
-          height: 27px;
-          left: 86.5%;
-          top: 41px;
-        }
-        a {
-          font-size: 18px;
-          text-decoration: none;
-          font-family: 'Conv_10710';
-          color: white;
-          transition: .5s;
-        }
-        a:hover {
-          opacity: .4;
-          transition: .1s;
-        }
-        .menu {
-          position: absolute;
-          width: 123px;
-          height: 51px;
-          left: 13.2%;
-          top: 28px;
-          background: #090909;
-          border: 1px solid #FFFFFF;
-          box-sizing: border-box;
-          z-index: 12;
-          transition: .5s;
-        }
-        .About2 {
-          position: absolute;
-          left: 17px;
-          top: 12px;
-          transition: .5s;
-        }
-        .contact {
-          position: absolute;
-          left: 17px;
-          top: 52px;
-          transition: .5s;
-        }
-        .comand {
-          position: absolute;
-          left: 17px;
-          top: 92px;
-          transition: .5s;
-        }
-        .book {
-          position: absolute;
-          left: 17px;
-          top: 132px;
-          transition: .5s;
-        }
-        .office {
-          position: absolute;
-          left: 17px;
-          top: 172px;
-          transition: .5s;
-        }
-        .hidden {
-          opacity: 0;
-        }
-        .blocker {
-          display: none;
-        }
-        .showmenu {
-          height: 221px;
-        }
-        .bookhead {
-          position: absolute;
-          width: 506px;
-          height: 96px;
-          left: 162px;
-          top: 173px;
-          font-family: 'Conv_10710';
-          font-size: 5vw;
-          line-height: 27px;
-          color: #FFFFFF;
-        }
-        .con1 {
-          position: absolute;
-          width: 435px;
-          height: 74px;
-          left: 162px;
-          top: 314px;
-          font-family: 'Conv_10710';
-          font-size: 3.3vw;
-          line-height: 27px;
-          color: #FFFFFF;
-        }
-        .con2 {
-          position: absolute;
-          width: 721px;
-          height: 140px;
-          left: 162px;
-          top: 263px;
-          font-family: 'Conv_10710';
-          font-size: 1.66vw;
-          line-height: 35px;
-          color: #FFFFFF;
-        }
-        .line6 {
-          position: absolute;
-          width: 91.66%;
-          height: 0px;
-          margin-left: 53px;
-          top: 3362px;
-          border: 1.1px solid #FFFFFF;
-        }
-        .logo2 {
-          position: absolute;
-          width: 140px;
-          height: 75px;
-          left: 60px;
-          top: 3392px;
-        }
-        .autor {
-          position: absolute;
-          width: 303px;
-          height: 46px;
-          left: 508px;
-          top: 3389px;
-          font-family: 'Conv_10710';
-          font-size: 1.8vw;
-          line-height: 27px;
-          color: #FFFFFF;
-        }
-        .art {
-          position: absolute;
-          width: 303px;
-          height: 46px;
-          left: 954px;
-          top: 3386px;
-          font-family: 'Conv_10710';
-          font-size: 1.8vw;
-          line-height: 27px;
-          color: #FFFFFF;
-        }
-        .hse {
-          position: absolute;
-          width: 410px;
-          height: 50px;
-          left: 508px;
-          top: 3460px;
-          font-family: 'Conv_10710';
-          font-size: 1.8vw;
-          line-height: 27px;
-          color: #FFFFFF;
-        }
-        .buy {
-          position: absolute;
-          width: 279px;
-          height: 50px;
-          left: 60px;
-          top: 3534px;
-          font-family: 'Conv_10710';
-          font-size: 1.8vw;
-          line-height: 27px;
-          color: #FFFFFF;
-        }
-        input {
-          position: absolute;
-          font-size: 1.8vw;
-          color: rgba(255, 255, 255, 0.5);
-          background: #090909;
-          border: 2px solid #FFFFFF;
-          box-sizing: border-box;
-          font-family: 'Conv_10710';
-          margin: 15px auto;
-          padding: 0 10px;
-          width: 425px;
-          height: 49px;
-          left: 509px;
-          top: 3508px;
-        }
-        .buy2 {
-          position: absolute;
-          width: 427px;
-          height: 49px;
-          left: 954px;
-          top: 3522px;
-          background: #FFA842;
-          font-size: 1.8vw;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          color: #090909;
-          font-family: 'Conv_10710';
-          transition: .5s;
-        }
-        .buy2:hover {
-          opacity: .4;
-          transition: .1s;
-        }
-        .line7 {
-          position: absolute;
-          width: 91.66%;
-          height: 0px;
-          margin-left: 53px;
-          top: 3604px;
-          border: 1.1px solid #FFFFFF;
-        }
-        .book1 {
-          position: absolute;
-          width: 100%;
-          height: auto;
-          left: 0px;
-          top: 552px;
-        }
-        .book2 {
-          position: absolute;
-          width: 50%;
-          height: auto;
-          left: 0px;
-          top: 1352px;
-          z-index: 2;
-        }
-        .book3 {
-          position: absolute;
-          width: 50%;
-          height: auto;
-          right: 0px;
-          top: 1352px;
-          z-index: 2;
-        }
-        .book4 {
-          position: absolute;
-          width: 100%;
-          height: auto;
-          left: 0px;
-          top: 1730px;
-          z-index: 1;
-        }
-        .book5 {
-          position: absolute;
-          width: 50%;
-          height: auto;
-          left: 0px;
-          top: 2774px;
-        }
-        .read {
-          position: absolute;
-          width: 720px;
-          height: 470px;
-          right: 0px;
-          top: 2778px;
-          background: #FFA842;
-          color: #090909;
-          font-family: 'Conv_10710';
-          font-size: 64px;
-          line-height: 64px;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          transition: .5s;
-        }
-        .read:hover {
-          opacity: .4;
-          transition: .1s;
-          cursor: pointer;
-        }
+
     </style>
     <script>
     $(document).ready(function(){
@@ -433,6 +107,30 @@ $(document).ready(function(){
     },1)
   });
 });
+$(document).ready(function(){
+  $(".burger").click(function(){
+    $(".burgermenu").addClass("showburger");
+    setTimeout(function(){
+      $(".dark").removeClass("blocker");
+    },100)
+    setTimeout(function(){
+      $(".dark").addClass("darkmode");
+    },210)
+
+  });
+});
+$(document).ready(function(){
+  $(".back").click(function(){
+    $(".burgermenu").removeClass("showburger");
+    setTimeout(function(){
+      $(".dark").removeClass("darkmode");
+    },100)
+    setTimeout(function(){
+      $(".dark").addClass("blocker");
+    },810)
+
+  });
+});
     </script>
   </head>
   <body>
@@ -476,6 +174,9 @@ $(document).ready(function(){
     <div class="choose2">
       <a href="#">Подбери пару</a>
     </div>
+    <div class="burger">
+      <img src="images/burger.svg" alt="">
+    </div>
     </div>
     <div class="bookhead">Книга</div>
     <div class="con2">Многостаночное издание о новом пространстве сервиса FRINT.<br>Здесь протекает вся работа. Книга призвана рассказать<br>посетителям о производстве шрифтов, а также представить<br>пространство компании, в котором организована вся деятельность.</div>
@@ -508,5 +209,20 @@ $(document).ready(function(){
     </form>
     <div onClick="window.location='https://dimchenskiy.github.io/River/' "class="buy2">Заказать</div>
     <div class="line7"></div>
+    <div class="burgermenu">
+      <div class="back">
+        <img src="images/back.svg" alt="">
+      </div>
+      <div class="burabout">О нас</div>
+      <div onClick="window.location='contact.html' "class="burcontact">Контакты</div>
+      <div onClick="window.location='comand.html' "class="burcomand">Команда</div>
+      <div onClick="window.location='book1.html' "class="burbook">Книга</div>
+      <div onClick="window.location='room.html' "class="burcoffice">Офис</div>
+      <div onClick="window.location='https://dimchenskiy.github.io/River/' "class="burfound">Найти шрифт</div>
+      <div onClick="window.location='https://dimchenskiy.github.io/Game/' "class="burskill">Прокачай навыки</div>
+      <div onClick="window.location='drag.html' "class="burchoose">Подбери шрифт</div>
+      <div onClick="window.location='choose.html' "class="burchoose2">Подбери пару</div>
+    </div>
+    <div class="dark blocker"></div>
   </body>
 </html>

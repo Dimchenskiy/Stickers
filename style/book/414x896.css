@@ -1,0 +1,523 @@
+.forbody {
+  background: #090909;
+  transition: 1s;
+}
+.fix {
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  background: #090909;
+  top: 0px;
+  left: 0px;
+  z-index: 10;
+}
+.logo {
+  position: absolute;
+  width: 61px;
+  height: auto;
+  left: 20px;
+  top: 22px;
+  transition: .5s;
+}
+.logo:hover {
+  opacity: .4;
+  transition: .1s;
+  cursor: pointer;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+.About {
+  position: absolute;
+  width: 14%;
+  height: 20px;
+  left: 14.5%;
+  top: 41px;
+  display: none;
+}
+.list {
+  position: absolute;
+  width: 15.3%;
+  height: 27px;
+  left: 24.3%;
+  top: 41px;
+  display: none;
+}
+.found {
+  position: absolute;
+  width: 12.5%;
+  height: 27px;
+  left: 38.4%;
+  top: 41px;
+  display: none;
+}
+.skill {
+  position: absolute;
+  width: 16%;
+  height: 27px;
+  left: 53%;
+  top: 41px;
+  display: none;
+}
+.choose {
+  position: absolute;
+  width: 15%;
+  height: 27px;
+  left: 70.2%;
+  top: 41px;
+  display: none;
+}
+.choose2 {
+  position: absolute;
+  width: 12.9%;
+  height: 27px;
+  left: 86.5%;
+  top: 41px;
+  display: none;
+}
+a {
+  font-size: 18px;
+  text-decoration: none;
+  font-family: 'Conv_10710';
+  color: white;
+  transition: .5s;
+}
+a:hover {
+  opacity: .4;
+  transition: .1s;
+}
+.menu {
+  position: absolute;
+  width: 123px;
+  height: 51px;
+  left: 13.2%;
+  top: 28px;
+  background: #090909;
+  border: 1px solid #FFFFFF;
+  box-sizing: border-box;
+  z-index: 12;
+  transition: .5s;
+}
+.burger {
+  position: absolute;
+  right: 20px;
+  top: 26px;
+  width: 40.24px;
+  height: auto;
+}
+.About2 {
+  position: absolute;
+  left: 17px;
+  top: 12px;
+  transition: .5s;
+}
+.contact {
+  position: absolute;
+  left: 17px;
+  top: 52px;
+  transition: .5s;
+}
+.comand {
+  position: absolute;
+  left: 17px;
+  top: 92px;
+  transition: .5s;
+}
+.book {
+  position: absolute;
+  left: 17px;
+  top: 132px;
+  transition: .5s;
+}
+.office {
+  position: absolute;
+  left: 17px;
+  top: 172px;
+  transition: .5s;
+}
+.hidden {
+  opacity: 0;
+}
+.blocker {
+  display: none;
+}
+.showmenu {
+  height: 221px;
+}
+.bookhead {
+  position: absolute;
+  width: 59.4%;
+  height: 96px;
+  left: 20px;
+  top: 124px;
+  font-family: 'Conv_10710';
+  font-size: 8.6vw;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+.con1 {
+  position: absolute;
+  width: 435px;
+  height: 74px;
+  left: 7.25%;
+  top: 314px;
+  font-family: 'Conv_10710';
+  font-size: 4.3vw;
+  line-height: 5vw;
+  color: #FFFFFF;
+}
+.con2 {
+  position: absolute;
+  width: 80%;
+  height: 140px;
+  left: 20px;
+  top: 183px;
+  font-family: 'Conv_10710';
+  font-size: 4.7vw;
+  line-height: 5.9vw;
+  color: #FFFFFF;
+}
+.line6 {
+  position: absolute;
+  width: 87.66%;
+  height: 0px;
+  margin-left: 20px;
+  top: 1405px;
+  border: 1.1px solid #FFFFFF;
+}
+.logo2 {
+  position: absolute;
+  width: 88px;
+  height: auto;
+  left: 40%;
+  top: 1435px;
+}
+.autor {
+  position: absolute;
+  width: 203px;
+  height: 46px;
+  left: 28px;
+  top: 1700px;
+  font-family: 'Conv_10710';
+  font-size: 18px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+.art {
+  position: absolute;
+  width: 203px;
+  height: 46px;
+  left: 28px;
+  top: 1736px;
+  font-family: 'Conv_10710';
+  font-size: 18px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+.hse {
+  position: absolute;
+  width: 280px;
+  height: 50px;
+  left: 28px;
+  top: 1780px;
+  font-family: 'Conv_10710';
+  font-size: 18px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+.buy {
+  position: absolute;
+  width: 279px;
+  height: 50px;
+  left: 24px;
+  top: 1510px;
+  font-family: 'Conv_10710';
+  font-size: 18px;
+  line-height: 27px;
+  color: #FFFFFF;
+}
+input {
+  position: absolute;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.5);
+  background: #090909;
+  border: 2px solid #FFFFFF;
+  box-sizing: border-box;
+  font-family: 'Conv_10710';
+  margin: 15px auto;
+  padding: 0 10px;
+  width: 87.66%;
+  height: 41px;
+  margin-left: 15px;
+  top: 1550px;
+}
+.buy2 {
+  position: absolute;
+  width: 87.66%;
+  height: 41px;
+  margin-left: 15px;
+  top: 1630px;
+  background: #FFA842;
+  font-size: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #090909;
+  font-family: 'Conv_10710';
+  transition: .5s;
+}
+.buy2:hover {
+  opacity: .4;
+  transition: .1s;
+}
+.line7 {
+  position: absolute;
+  width: 91.66%;
+  height: 0px;
+  margin-left: 23px;
+  top: 3034px;
+  border: 1.1px solid #FFFFFF;
+  display: none;
+}
+.book1 {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  left: 0px;
+  top: 452px;
+}
+.book2 {
+  position: absolute;
+  width: 50%;
+  height: auto;
+  left: 0px;
+  top: 702px;
+  z-index: 2;
+}
+.book3 {
+  position: absolute;
+  width: 50%;
+  height: auto;
+  right: 0px;
+  top: 702px;
+  z-index: 2;
+}
+.book4 {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  left: 0px;
+  top: 850px;
+  z-index: 1;
+}
+.book5 {
+  position: absolute;
+  width: 50%;
+  height: auto;
+  left: 0px;
+  top: 1184px;
+}
+.read {
+  position: absolute;
+  width: 50%;
+  height: 33vw;
+  right: 0px;
+  top: 1184px;
+  background: #FFA842;
+  color: #090909;
+  font-family: 'Conv_10710';
+  font-size: 5vw;
+  line-height: 6vw;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .5s;
+}
+.read:hover {
+  opacity: .4;
+  transition: .1s;
+  cursor: pointer;
+}
+.burgermenu {
+  position: fixed;
+  width: 410px;
+  height: 100vh;
+  right: -475px;
+  top: 0px;
+  background: #090909;
+  z-index: 10;
+  transition: .9s;
+}
+.back {
+  position: absolute;
+  width: 40px;
+  height: auto;
+  right: 25px;
+  top: 25px;
+}
+.burabout {
+  position: absolute;
+  width: 92px;
+  height: 53px;
+  left: 63px;
+  top: 103px;
+  font-size: 36px;
+  text-decoration: none;
+  font-family: 'Conv_10710';
+  color: white;
+}
+.burcontact {
+  position: absolute;
+  width: 92px;
+  height: 53px;
+  left: 63px;
+  top: 175px;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: 'Conv_10710';
+  color: white;
+}
+.burcomand {
+  position: absolute;
+  width: 92px;
+  height: 53px;
+  left: 63px;
+  top: 212px;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: 'Conv_10710';
+  color: white;
+}
+.burbook {
+  position: absolute;
+  width: 92px;
+  height: 53px;
+  left: 63px;
+  top: 248px;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: 'Conv_10710';
+  color: white;
+}
+.burcoffice {
+  position: absolute;
+  width: 92px;
+  height: 53px;
+  left: 63px;
+  top: 285px;
+  font-size: 20px;
+  text-decoration: none;
+  font-family: 'Conv_10710';
+  color: white;
+}
+.burfound {
+  position: absolute;
+  width: 215px;
+  height: 53px;
+  left: 63px;
+  top: 361px;
+  font-size: 36px;
+  text-decoration: none;
+  font-family: 'Conv_10710';
+  color: white;
+}
+.burskill {
+  position: absolute;
+  width: 281px;
+  height: 53px;
+  left: 63px;
+  top: 437px;
+  font-size: 36px;
+  text-decoration: none;
+  font-family: 'Conv_10710';
+  color: white;
+}
+.burchoose {
+  position: absolute;
+  width: 281px;
+  height: 53px;
+  left: 63px;
+  top: 513px;
+  font-size: 36px;
+  text-decoration: none;
+  font-family: 'Conv_10710';
+  color: white;
+}
+.burchoose2 {
+  position: absolute;
+  width: 281px;
+  height: 53px;
+  left: 63px;
+  top: 589px;
+  font-size: 36px;
+  text-decoration: none;
+  font-family: 'Conv_10710';
+  color: white;
+}
+.showburger {
+  transform: translate(-475px);
+}
+@media screen and (max-width: 375px) {
+  .burabout {
+    left: 103px;
+    top: 83px;
+    font-size: 30px;
+  }
+  .burcontact {
+    left: 103px;
+    top: 143px;
+    font-size: 20px;
+  }
+  .burcomand {
+    left: 103px;
+    top: 183px;
+    font-size: 20px;
+  }
+  .burbook {
+    left: 103px;
+    top: 223px;
+    font-size: 20px;
+  }
+  .burcoffice {
+    left: 103px;
+    top: 263px;
+    font-size: 20px;
+  }
+  .burfound {
+    left: 103px;
+    top: 323px;
+    font-size: 30px;
+  }
+  .burskill {
+    left: 103px;
+    top: 383px;
+    font-size: 30px;
+  }
+  .burchoose {
+    left: 103px;
+    top: 443px;
+    font-size: 30px;
+  }
+  .burchoose2 {
+    left: 103px;
+    top: 503px;
+    font-size: 30px;
+  }
+}
+.dark {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  pointer-events: none;
+  background: #090909;
+  opacity: 0;
+  transition: .5s;
+}
+.darkmode {
+  opacity: .8;
+  transition: .5s;
+}
