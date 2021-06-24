@@ -93,6 +93,12 @@ a:hover {
   z-index: 12;
   transition: .5s;
 }
+.burger {
+  display: none;
+}
+.back {
+  display: none;
+}
 .About2 {
   position: absolute;
   left: 17px;
@@ -416,7 +422,7 @@ a:hover {
 @media screen and (min-width: 1600px) {
   .autor {
     font-size: 30px;
-    
+
   }
 }
 .art {

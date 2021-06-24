@@ -35,6 +35,12 @@ img {
   left: 14.5%;
   top: 41px;
 }
+.burger {
+  display: none;
+}
+.back {
+  display: none;
+}
 .list {
   position: absolute;
   width: 14.3%;
