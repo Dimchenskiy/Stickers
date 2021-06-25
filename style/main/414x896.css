@@ -46,6 +46,13 @@ html {
     text-align: center;
     line-height: 14vw;
   }
+  @media screen and (min-width: 460px) {
+    .header {
+      font-size: 60px;
+      line-height: 60px;
+    }
+
+  }
   .header2 {
     position: absolute;
     width: 78.5%;
@@ -57,6 +64,13 @@ html {
     color: white;
     text-align: center;
     line-height: 6.3vw;
+  }
+  @media screen and (min-width: 460px) {
+    .header2 {
+      font-size: 30px;
+      line-height: 30px;
+    }
+
   }
   .fix {
     position: fixed;
